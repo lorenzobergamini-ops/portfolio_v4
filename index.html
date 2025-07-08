@@ -1,0 +1,178 @@
+<!DOCTYPE html> <html lang="it"> 
+  <head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Portfolio - Bergamini Lorenzo</title> 
+    <link rel="icon" type="image/png" href="3ee2b6d2-7ea5-4450-b080-88432af40f19.png" /> 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <script> tailwind.config = { darkMode: 'class' } </script> 
+  </head> 
+  <body id="inizio" class="light-theme font-sans text-gray-800 dark:bg-neutral-900 dark:text-gray-100"> 
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 hidden z-50 flex justify-between items-center text-sm shadow-md"> 
+      <p> Questo sito utilizza cookie per migliorare l'esperienza dell'utente. <a href="COOKIES.html" target="_blank" class="text-blue-400 underline">Scopri di più</a>. </p> 
+      <button id="accept-cookies" class="bg-blue-500 px-4 py-2 rounded text-white">Ok</button> 
+    </div>
+<header class="sticky top-0 z-40 bg-gradient-to-r from-black to-blue-700 text-white shadow-md">
+  <div class="max-w-screen-xl mx-auto flex justify-between items-center p-4">
+    <div class="flex items-center gap-3">
+      <img src="miaafoto.jpg" alt="Profilo" class="w-10 h-10 rounded-full object-cover border-2 border-white" />
+      <h1 class="text-2xl font-semibold">Lorenzo Bergamini</h1>
+    </div>
+    <button id="menu-toggle" class="text-xl" aria-label="Apri impostazioni" aria-controls="control-panel" aria-expanded="false">
+      &#9776;
+    </button>
+  </div>
+  <nav>
+    <ul class="flex justify-center gap-6 py-3 bg-gradient-to-r from-black to-blue-700 text-white text-sm font-bold">
+      <li><a href="#chi-sono" data-translate="chi-sono">Chi sono</a></li>
+      <li><a href="#skills" data-translate="skills">Skills</a></li>
+      <li><a href="#progetti" data-translate="progetti">Progetti</a></li>
+      <li><a href="#contatti" data-translate="contatti">Contatti</a></li>
+      <li><a href="#feedbackkk">Feedback</a></li>
+    </ul>
+  </nav>
+</header>
+
+<aside id="control-panel" class="hidden fixed top-20 right-4 bg-white dark:bg-neutral-800 text-black dark:text-white p-4 rounded shadow-md min-w-[200px] z-50">
+  <h3 class="text-lg font-semibold" data-translate="impostazioni">Impostazioni</h3>
+  <div class="mt-3">
+    <label for="theme-toggle" class="block text-sm" data-translate="tema">Tema:</label>
+    <button id="theme-toggle" data-translate-theme class="mt-1 px-3 py-1 bg-blue-600 text-white rounded">Chiaro</button>
+  </div>
+  <div class="mt-3">
+    <label for="language-select" class="block text-sm" data-translate="lingua">Lingua:</label>
+    <select id="language-select" class="mt-1 w-full p-1 rounded border border-gray-300 dark:text-white dark:bg-gray-800">
+      <option value="it">Italiano</option>
+      <option value="en">English</option>
+    </select>
+  </div>
+</aside>
+
+<main class="max-w-screen-xl mx-auto px-4">
+  <section id="chi-sono" class="py-12">
+    <div class="flex flex-wrap gap-6 items-start justify-between">
+      <div class="flex-1 min-w-[250px]">
+        <h2 class="text-3xl font-bold mb-4 text-blue-900 " data-translate="chi-sono">Chi sono</h2>
+        <p class="text-justify" data-translate="descrizione">
+          Mi chiamo Lorenzo Bergamini, ho 18 anni e una delle passioni che da sempre mi accompagna è l’informatica. Questo interesse è nato in modo del tutto spontaneo e naturale durante l'infanzia. Ricordo ancora con entusiasmo il momento in cui, terminata la scuola elementare, i miei genitori mi regalarono il mio primo telefono. Quell’oggetto, apparentemente semplice, suscitò in me un profondo senso di meraviglia e una forte curiosità: mi chiedevo come fosse possibile costruire uno strumento così sofisticato, capace di svolgere così tante funzioni in modo così rapido ed efficiente.
+          Fu proprio da quel momento che iniziai ad avvicinarmi al mondo della tecnologia. Cominciai a documentarmi, leggendo articoli, guardando video, esplorando forum e ponendomi sempre nuove domande. Volevo comprendere cosa si nascondesse dietro lo schermo, come funzionassero i software, quali linguaggi permettessero a un programma di “parlare” con un dispositivo e come venissero progettati i sistemi che oggi fanno parte della nostra quotidianità.
+          Con il tempo, questa semplice curiosità si è trasformata in una vera e propria passione. Quando giunse il momento di scegliere il percorso di studi alle scuole superiori, non ebbi dubbi: decisi di iscrivermi a un istituto tecnico con indirizzo informatico. Questa scelta ha rappresentato per me il primo passo concreto verso un futuro nel settore tecnologico, permettendomi di acquisire le basi teoriche e pratiche su cui intendo costruire la mia carriera.
+          Oggi, guardandomi indietro, posso dire con certezza che quella decisione ha segnato l’inizio di un percorso che sento profondamente mio.
+        </p>
+      </div>
+      <div>
+        <img src="miaafoto.jpg" alt="Foto di Lorenzo Bergamini" class="w-56 rounded-lg shadow-md" />
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-12">
+    <h2 class="text-3xl font-bold mb-6 text-blue-900 ">Skills</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div class="bg-blue-100 dark:bg-neutral-800 border-l-4 border-blue-900 dark:border-blue-300 p-4 rounded shadow-sm">
+        <h3 class="text-lg font-semibold text-blue-900 ">HTML & CSS</h3>
+        <p><strong>ITA:</strong> Solida padronanza di HTML e CSS. Creo pagine accessibili e responsive usando Flexbox, Grid e media query.</p>
+        <p><strong>ENG:</strong> Solid knowledge of HTML and CSS. I build accessible and responsive web pages using Flexbox, Grid, and media queries.</p>
+      </div>
+      <div class="bg-blue-100 dark:bg-neutral-800 border-l-4 border-blue-900 dark:border-blue-300 p-4 rounded shadow-sm">
+        <h3 class="text-lg font-semibold text-blue-900 ">JavaScript</h3>
+        <p><strong>ITA:</strong> Manipolazione del DOM, eventi, fetch API e async/await. Sto studiando React.</p>
+        <p><strong>ENG:</strong> DOM manipulation, events, fetch API, and async/await. Currently learning React.</p>
+      </div>
+      <div class="bg-blue-100 dark:bg-neutral-800 border-l-4 border-blue-900 dark:border-blue-300 p-4 rounded shadow-sm">
+        <h3 class="text-lg font-semibold text-blue-900 ">Python 3</h3>
+        <p><strong>ITA:</strong> Utilizzo Python per script, automazioni e gestione API. Esperienza con librerie come requests e paho-mqtt.</p>
+        <p><strong>ENG:</strong> I use Python for scripting, automation, and API handling. Experience with libraries like requests and paho-mqtt.</p>
+      </div>
+      <div class="bg-blue-100 dark:bg-neutral-800 border-l-4 border-blue-900 dark:border-blue-300 p-4 rounded shadow-sm">
+        <h3 class="text-lg font-semibold text-blue-900 ">Java</h3>
+        <p><strong>ITA:</strong> Progetti OOP e GUI con Swing. Familiarità con array, liste, eccezioni, ereditarietà e metodi statici.</p>
+        <p><strong>ENG:</strong> OOP projects and Swing GUI. Comfortable with arrays, lists, exceptions, inheritance, and static methods.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section id="progetti" class="py-12 text-center">
+  <h2 class="text-3xl font-bold mb-6 text-blue-900 " data-translate="progetti">I miei progetti</h2>
+  <div class="bg-white dark:bg-neutral-800 p-6 rounded shadow-md border-l-4 border-blue-900 dark:border-blue-300">
+    <h3 class="text-xl font-semibold mb-2" data-translate="portfolio">Portfolio Personale</h3>
+    <p class="mb-4" data-translate="descrizione-progetto">Cliccando il seguente link vi manderà sulla mia pagina personale di github dove potrete visionare i miei lavori svolti</p>
+    <div class="flex flex-wrap gap-4 mb-4 flex justify-center">
+      <img src="uti-00-gestione-ufficio.png" alt="Portfolio" class="w-24 h-24 object-contain" />
+      <img src="Mouse_Trap.png" alt="Portfolio" class="w-24 h-24 object-contain" />
+      <img src="crazy-taxi-256x256.png" alt="Portfolio" class="w-24 h-24 object-contain" />
+    </div>
+    <a href="https://github.com/lorenzobergamini-ops" target="_blank" class="text-blue-700 dark:text-blue-400 font-bold underline" data-translate="guarda">Guarda su GitHub</a>
+  </div>
+</section>
+
+<section id="contatti" class="py-12">
+  <h2 class="text-3xl font-bold mb-6 text-blue-900 text-center" data-translate="contatti">Contatti</h2>
+  <p class="mb-4 text-center" data-translate="social">Mi trovi anche su:</p>
+  <ul class="flex flex-wrap gap-6 justify-center">
+    <li>
+      <a href="https://github.com/lorenzobergamini-ops" target="_blank" class="flex items-center gap-2 text-blue-700 dark:text-blue-400">
+        <img src="github.png" alt="GitHub" class="w-5 h-5" /> GitHub
+      </a>
+    </li>
+    <li>
+      <a href="https://instagram.com/lorenzo.bergamini" target="_blank" class="flex items-center gap-2 text-blue-700 dark:text-blue-400">
+        <img src="instagram.png" alt="Instagram" class="w-5 h-5" /> Instagram
+      </a>
+    </li>
+    <li>
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRmTpKDCMwXHBTqgvWhgjFsRGZPHZSsGpVTVmCGtttXbZnrvCGWdRFlFLSZhPTwwJCGdgWv" target="_blank" class="flex items-center gap-2 text-blue-700 dark:text-blue-400">
+        <img src="email.png" alt="Email" class="w-5 h-5" /> Gmail
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section id="feedbackkk" class="py-12">
+  <div class="max-w-xl mx-auto bg-white dark:bg-neutral-800 p-6 rounded shadow-md">
+    <h3 class="text-xl font-bold mb-4" data-translate="feedback">Mandami un feedback!</h3>
+    <form id="feedback-form">
+      <label for="email" class="block mt-4" data-translate="email">La tua email (facoltativa):</label>
+      <input type="email" id="email" name="email" placeholder="nome@example.com" required class="w-full p-2 mt-1 border border-gray-300 rounded dark:text-black" />
+
+      <label for="message" class="block mt-4" data-translate="messaggio">Il tuo messaggio:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Scrivi qui il tuo feedback..." required class="w-full p-2 mt-1 border border-gray-300 rounded dark:text-black"></textarea>
+
+      <label for="rating" class="block mt-4" data-translate="valutazione">Valutazione:</label>
+      <div class="flex gap-2 text-2xl cursor-pointer" id="star-rating">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+      </div>
+
+      <input type="hidden" name="stars" id="star-value" value="0" />
+
+      <div class="g-recaptcha mt-4" data-sitekey="6LeD93orAAAAALdd3FMOxTBX7Gclibevbh2hBwa6"></div>
+
+      <button type="submit" data-translate="invia" class="w-full mt-6 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Invia feedback</button>
+    </form>
+    <p id="feedback-response" class="mt-4"></p>
+  </div>
+</section>
+
+<section class="py-12 text-center text-sm">
+  <h3 data-translate="informazioni" class="font-semibold"><em>Informazioni</em></h3>
+  <a href="COOKIES.html" target="_blank" class="text-blue-600 underline">Informativa sui cookies</a>
+  <p class="mt-2" data-translate="versione">
+    Questo sito è stato creato da Lorenzo Bergamini come portfolio personale. Versione: 1.0.0<br />
+    Ultimo aggiornamento: Luglio 2025<br />
+    Questo sito non è ufficiale: è stato realizzato esclusivamente per uso personale e a scopo didattico.
+  </p>
+  <footer class="mt-4">&copy; 2025 Lorenzo Bergamini. Tutti i diritti riservati.</footer>
+</section>
+</main>
+<a href="#inizio" class="fixed bottom-6 right-6 bg-gradient-to-r from-black to-blue-600 text-white px-4 py-2 rounded-full shadow-lg font-bold" data-translate="torna">Torna all'inizio</a>
+
+<script src="script.js"></script> 
+<script src="script1.js"></script> 
+</body> 
+</html>
