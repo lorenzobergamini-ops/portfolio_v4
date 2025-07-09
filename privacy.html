@@ -4,101 +4,177 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Informativa Privacy - Lorenzo Bergamini</title>
-  <link rel="icon" type="image/png" href="3ee2b6d2-7ea5-4450-b080-88432af40f19.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = { darkMode: 'class' }
-  </script>
+  <link rel="icon" type="image/png" href="3ee2b6d2-7ea5-4450-b080-88432af40f19.png"> 
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background: #f5f7fa;
+      color: #333;
+      padding: 2rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    a {
+      color: #0078d7;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover, a:focus {
+      color: #005ea2;
+      outline: none;
+    }
+
+    h1, h2, h3 {
+      color: #1a2637;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-top: 0;
+      border-bottom: 3px solid #0078d7;
+      padding-bottom: 0.3rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.4rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #0078d7;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+      color: #444;
+    }
+
+    .container-box {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      padding: 1.5rem 2rem;
+      margin-top: 1rem;
+    }
+
+    ul {
+      margin-left: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #0d47a1;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background 0.3s ease;
+    }
+
+    .button a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .button:hover {
+      background-color: #1565c0;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      h3 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
 </head>
-<body class="font-sans text-gray-800 bg-gray-100 dark:bg-neutral-900 dark:text-gray-100 min-h-screen">
+<body>
 
-  <main class="max-w-2xl mx-auto px-4 py-8">
-    <h1 id="inizio" class="text-3xl md:text-4xl font-bold mb-6 text-blue-900 dark:text-blue-300 border-b-4 border-blue-700 pb-2">
-      Informativa sulla Privacy di Lorenzo Bergamini
-    </h1>
+  <h1 id="inizio">Informativa sulla Privacy di Lorenzo Bergamini</h1>
 
-    <section class="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6 mb-8">
-      <p>
-        Questa informativa descrive in che modo <strong>Lorenzo Bergamini</strong> raccoglie, utilizza e protegge i tuoi dati personali durante la navigazione su questo sito web. L’obiettivo è garantirti la massima trasparenza e il pieno controllo sulle tue informazioni.
-      </p>
-      <p>
-        Visitando il mio sito, accetti le pratiche descritte in questa pagina. Ti invito a leggerla attentamente per comprendere come vengono trattati i dati.
-      </p>
-    </section>
+  <div class="container-box">
+    <p>Questa informativa descrive in che modo <strong>Lorenzo Bergamini</strong> raccoglie, utilizza e protegge i tuoi dati personali durante la navigazione su questo sito web. L’obiettivo è garantirti la massima trasparenza e il pieno controllo sulle tue informazioni.</p>
+    <p>Visitando il mio sito, accetti le pratiche descritte in questa pagina. Ti invito a leggerla attentamente per comprendere come vengono trattati i dati.</p>
+  </div>
 
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold text-blue-900 dark:text-blue-300 mb-2 border-b border-blue-200 dark:border-blue-700 pb-1">Tipologie di dati raccolti</h2>
-      <div class="bg-white dark:bg-neutral-800 rounded-lg shadow p-5">
-        <p>I dati raccolti possono includere:</p>
-        <ul class="list-disc ml-6 mb-2">
-          <li>Dati forniti volontariamente (nome, email, contenuti del modulo di contatto);</li>
-          <li>Dati tecnici anonimi (IP, tipo di dispositivo, sistema operativo, interazioni sul sito);</li>
-          <li>Cookie tecnici e analitici per migliorare l’esperienza utente.</li>
-        </ul>
-        <p>I dati non vengono associati direttamente alla tua identità, salvo che tu non li fornisca esplicitamente.</p>
-      </div>
-    </section>
+  <h2>Tipologie di dati raccolti</h2>
+  <div class="container-box">
+    <p>I dati raccolti possono includere:</p>
+    <ul>
+      <li>Dati forniti volontariamente (nome, email, contenuti del modulo di contatto);</li>
+      <li>Dati tecnici anonimi (IP, tipo di dispositivo, sistema operativo, interazioni sul sito);</li>
+      <li>Cookie tecnici e analitici per migliorare l’esperienza utente.</li>
+    </ul>
+    <p>I dati non vengono associati direttamente alla tua identità, salvo che tu non li fornisca esplicitamente.</p>
+  </div>
 
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold text-blue-900 dark:text-blue-300 mb-2 border-b border-blue-200 dark:border-blue-700 pb-1">Finalità del trattamento</h2>
-      <div class="bg-white dark:bg-neutral-800 rounded-lg shadow p-5">
-        <p>I dati raccolti sono utilizzati esclusivamente per:</p>
-        <ul class="list-disc ml-6 mb-2">
-          <li>Gestire le comunicazioni inviate dall’utente (es. modulo contatto);</li>
-          <li>Analizzare statisticamente l’uso del sito per migliorarne il contenuto;</li>
-          <li>Garantire la sicurezza, integrità e disponibilità del sito web.</li>
-        </ul>
-        <p>Nessun dato viene ceduto a terzi per finalità commerciali.</p>
-      </div>
-    </section>
+  <h2>Finalità del trattamento</h2>
+  <div class="container-box">
+    <p>I dati raccolti sono utilizzati esclusivamente per:</p>
+    <ul>
+      <li>Gestire le comunicazioni inviate dall’utente (es. modulo contatto);</li>
+      <li>Analizzare statisticamente l’uso del sito per migliorarne il contenuto;</li>
+      <li>Garantire la sicurezza, integrità e disponibilità del sito web.</li>
+    </ul>
+    <p>Nessun dato viene ceduto a terzi per finalità commerciali.</p>
+  </div>
 
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold text-blue-900 dark:text-blue-300 mb-2 border-b border-blue-200 dark:border-blue-700 pb-1">Diritti dell’utente</h2>
-      <div class="bg-white dark:bg-neutral-800 rounded-lg shadow p-5">
-        <p>Hai il diritto di:</p>
-        <ul class="list-disc ml-6 mb-2">
-          <li>Richiedere accesso, rettifica o cancellazione dei tuoi dati;</li>
-          <li>Limitare o opporti al trattamento;</li>
-          <li>Revocare il consenso in qualsiasi momento.</li>
-        </ul>
-        <p>
-          Per qualsiasi richiesta, puoi contattarmi tramite i canali disponibili nella sezione
-          <a href="index.html#contatti" class="text-blue-700 dark:text-blue-400 underline">Contatti</a>.
-        </p>
-      </div>
-    </section>
+  <h2>Diritti dell’utente</h2>
+  <div class="container-box">
+    <p>Hai il diritto di:</p>
+    <ul>
+      <li>Richiedere accesso, rettifica o cancellazione dei tuoi dati;</li>
+      <li>Limitare o opporti al trattamento;</li>
+      <li>Revocare il consenso in qualsiasi momento.</li>
+    </ul>
+    <p>Per qualsiasi richiesta, puoi contattarmi tramite i canali disponibili nella sezione <a href="contatti.html">Contatti</a>.</p>
+  </div>
 
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold text-blue-900 dark:text-blue-300 mb-2 border-b border-blue-200 dark:border-blue-700 pb-1">Conservazione e sicurezza dei dati</h2>
-      <div class="bg-white dark:bg-neutral-800 rounded-lg shadow p-5">
-        <p>
-          I dati sono conservati per il tempo strettamente necessario a soddisfare le finalità indicate e sono protetti mediante misure tecniche e organizzative adeguate a garantirne sicurezza e riservatezza.
-        </p>
-      </div>
-    </section>
+  <h2>Conservazione e sicurezza dei dati</h2>
+  <div class="container-box">
+    <p>I dati sono conservati per il tempo strettamente necessario a soddisfare le finalità indicate e sono protetti mediante misure tecniche e organizzative adeguate a garantirne sicurezza e riservatezza.</p>
+  </div>
 
-    <section class="mb-8">
-      <h3 class="text-lg font-semibold text-blue-900 dark:text-blue-300 mb-2"><em>Informazioni aggiuntive</em></h3>
-      <div class="bg-white dark:bg-neutral-800 rounded-lg shadow p-5">
-        <em>
-          Questo sito è stato creato da Lorenzo Bergamini come portfolio personale.<br>
-          Versione: 1.0.0<br>
-          Ultimo aggiornamento: Luglio 2025<br>
-          Il sito è a scopo didattico e non raccoglie dati per fini pubblicitari o commerciali.
-        </em>
-      </div>
-    </section>
+  <section>
+    <h3><em>Informazioni aggiuntive</em></h3>
+    <em>
+      Questo sito è stato creato da Lorenzo Bergamini come portfolio personale.  
+      Versione: 1.0.0  
+      Ultimo aggiornamento: Luglio 2025  
+      Il sito è a scopo didattico e non raccoglie dati per fini pubblicitari o commerciali.
+    </em>
+  </section>
 
-    <section class="mb-8">
-      <a href="COOKIES.html" target="_blank" class="text-blue-700 dark:text-blue-400 underline">Informativa sui cookies</a>
-    </section>
+  <a href="#inizio" class="button"><u>Torna all'inizio</u></a>
 
-    <footer class="text-center text-xs text-gray-500 dark:text-gray-400 mt-8">
-      &copy; 2025 Lorenzo Bergamini. Tutti i diritti riservati.
-    </footer>
-  </main>
+  <footer>
+    &copy; 2025 Lorenzo Bergamini. Tutti i diritti riservati.
+  </footer>
 
-  <a href="#inizio" class="fixed bottom-6 right-6 bg-gradient-to-r from-black to-blue-600 text-white px-4 py-2 rounded-full shadow-lg font-bold z-50 hover:bg-blue-700 transition">
-    Torna all'inizio
-  </a>
 </body>
+</html>
